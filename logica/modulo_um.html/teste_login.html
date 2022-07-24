@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+
+<script>
+
+var loginCadastrado = "Stella";
+var senhaCadastrada = "abc321";
+
+var maximo = 3;
+var atual = 1;
+
+while(atual <= maximo) {
+ 
+var loginInformado = prompt("Informe seu login");
+var senhaInformada = prompt("Informe sua senha");
+
+if(loginCadastrado == loginInformado && senhaCadastrada == senhaInformada) {
+    alert("Bem Vindo ao sistema " + loginInformado);
+    atual = maximo;
+} else {
+    if(atual == 3) {
+        alert("Número de tentativas ultrapassado");
+    } else {
+        alert("Login inválido, tente novamente.");
+    }
+}
+atual = atual + 1
+}
+
+
+</script>
